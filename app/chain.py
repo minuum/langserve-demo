@@ -25,5 +25,5 @@ prompt = ChatPromptTemplate.from_messages([("system", template)]).partial(
 )
 
 chain = (
-    prompt | ChatOpenAI(model="gpt-4-1106-preview", temperature=0) | StrOutputParser()
+    prompt | ChatOpenAI(model="gpt-4o-mini", temperature=0) | StrOutputParser()
 )
